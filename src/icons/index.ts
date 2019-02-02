@@ -1,6 +1,7 @@
+import * as React from 'react';
 import {SvgIconProps} from '@material-ui/core/SvgIcon';
 
-export type TIconComponent = (props: SvgIconProps) => JSX.Element;
+export type TIconComponent = React.ComponentType<SvgIconProps>;
 
 export * from './Instagram';
 export * from './Twitter';

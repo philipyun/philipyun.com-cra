@@ -12,6 +12,7 @@ import {
 export interface IFlexContainerProps {
     alignment?: TFlexAlignItems,
     children: React.ReactNode,
+    className?: string,
     column?: boolean,
     contentAlignment?: TFlexAlignContent,
     direction?: TFlexDirection,
@@ -21,7 +22,7 @@ export interface IFlexContainerProps {
     wrap?: TFlexWrap,
 }
 
-export default function FlexContainer(props: IFlexContainerProps) {
+const FlexContainer: React.FunctionComponent<IFlexContainerProps> = (props) => {
     let direction = (!!props.direction) ? props.direction : "row";
 
     if (!!props.column)
@@ -38,5 +39,7 @@ export default function FlexContainer(props: IFlexContainerProps) {
 
     let cssStyle = styleSheet(Object.assign({}, props.style || {}, style));
 
-    return <div style={cssStyle}>{props.children}</div>;
+    return <div className={props.className} style={cssStyle}>{props.children}</div>;
 };
+
+export default FlexContainer;
