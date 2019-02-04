@@ -1,17 +1,19 @@
 {
-    "education": {
-        "summary": {
-            "name": "University of California, Irvine",
-            "url": "https://uci.edu"
-        },
-        "achievements": [
-            {
-                "title": "Bachelor of Science in Computer Science",
-                "date": "JUNE 2017",
-                "details": "Specialization in Networked Systems"
-            }
-        ]
-    },
+    "education": [
+        {
+            "summary": {
+                "name": "University of California, Irvine",
+                "url": "https://uci.edu"
+            },
+            "achievements": [
+                {
+                    "title": "Bachelor of Science in Computer Science",
+                    "startDate": "JUNE 2017",
+                    "details": "Specialization in Networked Systems"
+                }
+            ]
+        }
+    ],
     "experience": [
         {
             "summary": {
@@ -22,7 +24,8 @@
             "achievements": [
                 {
                     "title": "Software Engineer",
-                    "date": "JUN 2017 - Present",
+                    "startDate": "JUN 2017",
+                    "endDate": "Present",
                     "details": [
                         "Served as a technical lead on multiple projects, using various technologies such as React/React-Native, Qt C++, and C# .NET",
                         "Interfaced directly with clients and coordinate with fellow engineers to follow sprint based, agile software methodology",
@@ -35,7 +38,8 @@
                 },
                 {
                     "title": "Software Engineering Intern",
-                    "date": "SEP 2016 - JUN 2017",
+                    "startDate": "SEP 2016",
+                    "endDate": "JUN 2017",
                     "details": [
                         "Maintained and provided new feature support for an existing in-house web application written in Angular.js",
                         "Created a cross-platform mobile application to demonstrate the company’s cloud service using React-Native",
@@ -53,7 +57,8 @@
             "achievements": [
                 {
                     "title": "Lab Tutor",
-                    "date": "SEP 2015 - APR 2016",
+                    "startDate": "SEP 2015",
+                    "endDate": "APR 2016",
                     "details": [
                         "Assist and advise students in programming assignments and general computer science topics",
                         "Explore and experiment the Python standard library as well as various third-party libraries with students",
@@ -65,14 +70,15 @@
         },
         {
             "summary": {
-                "name": "UC Irvine OIT Help Desk",
+                "name": "UC Irvine Office of Information Technology",
                 "url": "http://oit.uci.edu/",
                 "location": "Irvine, CA"
             },
             "achievements": [
                 {
                     "title": "Senior Consultant",
-                    "date": "FEB 2016 - Present",
+                    "startDate": "FEB 2016",
+                    "endDate": "FEB 2017",
                     "details": [
                         "Supervise and manage day-to-day tasks of student employees, including hiring and scheduling of student staff",
                         "Provide first level support for clients and handle second level customer support escalation when required",
@@ -82,7 +88,8 @@
                 },
                 {
                     "title": "Consultant",
-                    "date": "JAN 2014 - FEB 2016",
+                    "startDate": "JAN 2014",
+                    "endDate": "FEB 2016",
                     "details": [
                         "Service and support technical networking issues for residents across on-campus housing communities",
                         "Troubleshoot campus cable TV and the Application, Network, Data and Physical layers of the OSI Networking model"

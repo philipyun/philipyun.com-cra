@@ -8,15 +8,16 @@ export interface IResumeEntrySummary {
 
 export interface IResumeEntryAchievement {
     title: string,
-    date: string,
+    startDate: string,
+    endDate?: string,
     details: TResumeExperienceDetails
 }
 
-export interface IResumeExperienceEntry {
+export interface IResumeEntry {
     summary: IResumeEntrySummary
     achievements: IResumeEntryAchievement[]
 }
 
 export interface IResumeEntryPropTypes {
-    resumeEntry: IResumeExperienceEntry
+    resumeEntry: IResumeEntry
 }

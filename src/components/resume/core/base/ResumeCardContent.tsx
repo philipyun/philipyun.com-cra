@@ -4,8 +4,8 @@ import { CardContent } from '@material-ui/core';
 
 const styles = createStyles({
     cardContent: {
-        marginLeft: 41,
-        padding: 8,
+        marginLeft: 33,
+        padding: 16,
         paddingTop: 0,
         paddingBottom: "8px !important",
     }

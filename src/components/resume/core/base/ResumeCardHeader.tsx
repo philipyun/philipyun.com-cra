@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { createStyles, WithStyles, withStyles } from '@material-ui/core/styles';
 import { CardHeader } from '@material-ui/core';
-import { TIconComponent } from '../../icons';
+import { TIconComponent } from '../../../../icons';
 
 const styles = createStyles({
     cardHeader: {
