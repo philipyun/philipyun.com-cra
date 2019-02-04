@@ -98,30 +98,127 @@
             ]
         }
     ],
-    "projects": {
-
-    },
-    "skills": {
-        "programming": [
-            "MATLAB/GNU Octave",
-            "Python (2.7-3.5)",
-            "C (C99 and GNU C)",
-            "C++ 14",
-            "Intel x86 MASM",
-            "BASH/Unix"
-        ],
-        "operatingSystems": [
-            "Windows XP-10",
-            "Mac OS X",
-            "Linux (Ubuntu/Debian and Arch)"
-        ],
-        "miscellaneous": [
-            "Git Version Control (Git CLI and GitHub)",
-            "Microsoft/Open Office Suite"
-        ]
-    },
+    "projects": [
+        {
+            "summary": {
+                "name": "Pingpong.js",
+                "url": "https://github.com/philipyun/pingpong.js"
+            },
+            "achievements": [
+                {
+                    "title": "Ping Pong Standings Tracker",
+                    "details": [
+                        "Backend application that leverages Node.js and Express.js to track Ping Pong standings within the office of Promenade Software",
+                        "Created multiple models to represent Players, Games, Standings and various Stats, and stored data in a SQLite database",
+                        "Tracked multiple advanced stats such as player ELO strength score, Win/Loss Streaks, Last 10 Games, and Games Behind",
+                        "Collaborated with a co-worker to create an integrated Cloud/UI application to present the data, built with React.js and SemanticUI"
+                    ]
+                }
+            ]
+        },
+        {
+            "summary": {
+                "name": "Slack Assistant"
+            },
+            "achievements": [
+                {
+                    "title": "Real Time Slack Bot-Assistant",
+                    "details": [
+                        "Real time messaging bot for the Slack Messaging platform, to easily aide UC Irvine IT and network consultants",
+                        "Created a Python wrapper around ServiceNow’s REST API to send formatted messages containing support ticket information",
+                        "Periodically sent reminders in appropriate Slack channels about meetings and scheduled service appointments",
+                        "Provided an interface similar to a command line to easily query network and user status"
+                    ]
+                }
+            ]
+        },
+        {
+            "summary": {
+                "name": "NSH",
+                "url": "https://github.com/philipyun/Code-Examples/tree/master/C-Projects/shell"
+            },
+            "achievements": [
+                {
+                    "title": "Partial Recreation of Bash Shell",
+                    "details": [
+                        "A faithful partial recreation of the Bash Shell.  Written using C99 and the Unix standard library",
+                        "Contained support for multiple background processes, infinite process piping, and basic file redirection",
+                        "Command line parsing is completely dynamic with no static storage containers, and no memory leaking"
+                    ]
+                }
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "skillName": "Programming Languages",
+            "skillList": [
+                "MATLAB/GNU Octave",
+                "Python (2.7-3.5)",
+                "C (C99 and GNU C)",
+                "C++ 14",
+                "Intel x86 MASM",
+                "BASH/Unix"
+            ]
+        },
+        {
+            "skillName": "Web Technologies",
+            "skillList": [
+                "Advanced in React.js and React-Native.",
+                "Proficiency in Node.js, Express.js, and Jest.",
+                "Webpack, Babel.",
+                "Development Experience with Angular.js."
+            ]
+        },
+        {
+            "skillName": "Miscellaneous",
+            "skillList": [
+                "Qt C++ & QML,",
+                "Strong familiarity in Git VCS, CMake, and Makefile.",
+                "Proficient in Bash scripting.",
+                "Experience with Midi over USB using the RtMidi C++ library.",
+                "Embedded C++ (STMicro CPUs)"
+            ]
+        }
+    ],
     "awards": [
         "Member of Tau Beta Pi, America's 2nd oldest Engineering and Computer Science Honor Society",
         "Dean's List Honors, 5 Quarters"
+    ],
+    "hobbies": [
+        {
+            "category": "Music",
+            "details": [
+                "Guitar Player for 10+ years.",
+                "6 year member of the UC Irvine Anteater Pep Band as a Bass/Guitar/Percussion player.",
+                "Guitar Pedal collecting, owns over 15 guitar pedals.",
+                "Music enthusiast, favorite artists include Muse, John Mayer and Kings of Leon."
+            ]
+        },
+        {
+            "category": "Sports",
+            "details": [
+                "Extreme basketball (NCAA and NBA) fanatic.",
+                "Follows UC Irvine's Men's Basketball and the Golden State Warriors.",
+                "Heavy analysis in player trends and individual game box scores.",
+                "Avid Fan in Baseball and massive Dingers.",
+                "Enjoys watching the Chicago Cubs play with girlfriend."
+            ]
+        },
+        {
+            "category": "Entertainment",
+            "details": [
+                "Enthusiast with television and movies",
+                "Watched The Office more than 10 times through",
+                "Makes daily references to The Office and Tommy Wiseau's \"The Room\""
+            ]
+        },
+        {
+            "category": "Video games",
+            "details": [
+                "Casual Video game player",
+                "Enjoys playing Zelda: Breath of the Wild and the NBA 2K series"
+            ]
+        }
     ]
 }
