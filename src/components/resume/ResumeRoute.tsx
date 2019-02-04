@@ -1,18 +1,17 @@
 import * as React from 'react';
 import { createStyles, WithStyles, withStyles } from '@material-ui/core/styles';
-import { School, Work } from '@material-ui/icons';
+import { School, Work, Code } from '@material-ui/icons';
 import FlexContainer from '../common/FlexContainer';
 import resume from '../../resources/resume.json';
 import ExperienceCard from './views/ExperienceCard';
+import GeneralCard from './views/GeneralCard';
+import './ResumeRoute.css';
 
 const styles = createStyles({
     root: {
-        padding: 16,
-        flex: 1
+        padding: 8,
+        flex: 1,
     },
-    columnTwo: {
-        width: "50%",
-    }
 });
 
 interface IResumeRoutePropTypes extends WithStyles<typeof styles>{
@@ -21,12 +20,17 @@ interface IResumeRoutePropTypes extends WithStyles<typeof styles>{
 
 const ResumeRoute: React.FunctionComponent<IResumeRoutePropTypes> = (props) => {
     const { classes } = props;
-    const { education, experience} = resume;
+    const { education, experience, projects} = resume;
     return (
-        <FlexContainer className={classes.root}>
-            <FlexContainer column className={classes.columnTwo}>
+        <FlexContainer wrap="wrap" className={classes.root} justification="center">
+            <FlexContainer column contentAlignment="stretch" className="resumeColumnOne">
+                <GeneralCard />
+            </FlexContainer>
+
+            <FlexContainer column className="resumeColumnTwo">
                 <ExperienceCard headerTitle="Education" Icon={School} resumeEntries={education} />
                 <ExperienceCard headerTitle="Professional Experience" Icon={Work} resumeEntries={experience} />
+                <ExperienceCard headerTitle="Projects" Icon={Code} resumeEntries={projects} />
             </FlexContainer>
         </FlexContainer>
     );
