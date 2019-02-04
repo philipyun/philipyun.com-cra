@@ -10,4 +10,11 @@ export default createMuiTheme({
     typography: {
         useNextVariants: true,
     },
+    overrides: {
+        MuiLink: {
+            underlineNone: {
+                color: blueGrey[700]
+            }
+        }
+    }
 });
