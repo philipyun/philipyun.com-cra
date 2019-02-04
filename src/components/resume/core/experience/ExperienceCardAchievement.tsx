@@ -50,7 +50,7 @@ class ExperienceCardAchievement extends React.PureComponent<IExperienceCardAchie
         const {classes, achievement} = this.props;
         const {title, startDate, endDate} = achievement;
 
-        let date: string = startDate;
+        let date: string | undefined = startDate;
         if (!!endDate) {
             date += " - " + endDate;
         }
@@ -58,7 +58,7 @@ class ExperienceCardAchievement extends React.PureComponent<IExperienceCardAchie
         return (
             <FlexContainer justification="space-between">
                 <Typography variant="body2" className={classes.achievementTitle}>{title}</Typography>
-                <Typography variant="body2" className={classes.achievementTitle}>{date}</Typography>
+                {!!date && <Typography variant="body2" className={classes.achievementTitle}>{date}</Typography>}
             </FlexContainer>
         );
     }

@@ -1,0 +1,27 @@
+.resumeColumnOne {
+    width: 100%;
+}
+
+.resumeColumnTwo {
+    width: 100%;
+}
+
+@media (min-width: 750px) {
+    .resumeColumnOne {
+        width: 40%;
+        max-width: 450px;
+    }
+    .resumeColumnTwo {
+        width: 60%;
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .resumeColumnOne {
+        width: 450px;
+    }
+    .resumeColumnTwo {
+        width: 750px;
+    }
+}

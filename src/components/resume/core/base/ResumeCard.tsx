@@ -3,12 +3,9 @@ import { createStyles, WithStyles, withStyles } from '@material-ui/core/styles';
 import { Card } from '@material-ui/core';
 
 const styles = createStyles({
-    root: {
-        padding: 8,
-        width: "80%"
-    },
     cardContainer: {
-        padding: 8
+        padding: 8,
+        margin: 12,
     }
 });
 
@@ -19,11 +16,9 @@ interface IResumeCardPropTypes extends WithStyles<typeof styles> {
 const ResumeCard: React.FunctionComponent<IResumeCardPropTypes> = (props) => {
     const {classes, children} = props;
     return (
-        <div className={classes.root}>
-            <Card className={classes.cardContainer}>
-                {children}
-            </Card>
-        </div>
+        <Card className={classes.cardContainer}>
+            {children}
+        </Card>
     );
 };
 

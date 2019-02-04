@@ -23,9 +23,12 @@ const ExperienceCard: React.FunctionComponent<IExperienceCardPropTypes> = (props
                 {
                     resumeEntries.map((resumeEntry, index) => {
                         return (
-                            <div key={resumeEntry.summary.url}>
+                            <div key={resumeEntry.summary.name}>
                                 <ExperienceCardEntry resumeEntry={resumeEntry} />
-                                {index !== resumeEntries.length - 1 && <Divider />}
+                                {
+                                    index !== resumeEntries.length - 1 &&
+                                    <Divider />
+                                }
                             </div>
                         );
                     })

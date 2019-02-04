@@ -2,13 +2,13 @@ export type TResumeExperienceDetails = string | string[];
 
 export interface IResumeEntrySummary {
     name: string,
-    url: string,
+    url?: string,
     location?: string,
 }
 
 export interface IResumeEntryAchievement {
     title: string,
-    startDate: string,
+    startDate?: string,
     endDate?: string,
     details: TResumeExperienceDetails
 }
