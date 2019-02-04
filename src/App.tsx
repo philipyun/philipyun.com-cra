@@ -12,9 +12,6 @@ class App extends Component {
                 <FlexContainer column>
                     <Header />
                     <ResumeRoute />
-                    <div style={{width: "100%", height: 50}}>
-                        Made with React.js, TypeScript and Material-UI
-                    </div>
                 </FlexContainer>
             </MuiThemeProvider>
         );
