@@ -16,5 +16,5 @@ export const NavIcons: IconMetadata[] = [
     generateIcon("https://www.linkedin.com/in/philipyun/", LinkedIn),
     generateIcon("https://github.com/philipyun", Github),
     generateIcon("https://www.instagram.com/philip.yun103/", Instagram),
-    generateIcon("https://twitter.com/philipyun103", Twitter)
+    // generateIcon("https://twitter.com/philipyun103", Twitter)
 ];

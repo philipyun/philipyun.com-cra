@@ -24,9 +24,11 @@ const Header: React.FunctionComponent<IHeaderPropTypes> = (props) => {
     return (
         <AppBar position="sticky">
             <Toolbar>
-                <IconButton className={classes.menuButton}>
-                    <Menu />
-                </IconButton>
+                {   false && // todo remove this when we add more routes
+                    <IconButton className={classes.menuButton}>
+                        <Menu/>
+                    </IconButton>
+                }
                 <Typography variant="h5" color="inherit">Philip Yun</Typography>
                 <FlexContainer style={{flex: 1}} justification="flex-end">
                     {
