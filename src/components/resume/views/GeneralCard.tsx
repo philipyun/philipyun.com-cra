@@ -130,7 +130,7 @@ class GeneralCard extends React.PureComponent<IGeneralCardPropTypes>  {
                     {this.renderCustomDivider()}
                     {this.renderPhones()}
                     {this.renderCustomDivider()}
-                    {this.renderPlainTextEntry(Home, ["5930 Bixby Village Dr, Apt 157", "Long Beach, CA 90803"])}
+                    {this.renderPlainTextEntry(Home, ["Long Beach, CA"])}
                     {this.renderCustomDivider()}
                     {/*{this.renderPlainTextEntry(Settings, ["Skills"])}*/}
                 </CardContent>

@@ -17,6 +17,23 @@
     "experience": [
         {
             "summary": {
+                "name": "Fender Musical Instruments Corporation",
+                "url": "https://fender.com",
+                "location": "Hollywood, CA"
+            },
+            "achievements": [
+                {
+                    "title": "Software Engineer, Web",
+                    "startDate": "MAY 2019",
+                    "endDate": "Present",
+                    "details": [
+                        "Contributed to the Fender Play Platform on both mobile and web apps, using React and React-Native"
+                    ]
+                }
+            ]
+        },
+        {
+            "summary": {
                 "name": "Promenade Software",
                 "url":  "http://promenadesoftware.com/",
                 "location": "Irvine, CA"
@@ -25,7 +42,7 @@
                 {
                     "title": "Software Engineer",
                     "startDate": "JUN 2017",
-                    "endDate": "Present",
+                    "endDate": "APR 2019",
                     "details": [
                         "Served as a technical lead on multiple projects, using various technologies such as React/React-Native, Qt C++, and C# .NET",
                         "Interfaced directly with clients and coordinate with fellow engineers to follow sprint based, agile software methodology",

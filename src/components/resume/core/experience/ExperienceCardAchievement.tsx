@@ -13,7 +13,8 @@ const styles = createStyles({
         lineHeight: "normal"
     },
     achievementTitle: {
-        color: "rgba(0,0,0,.54)"
+        color: "rgba(0,0,0,.54)",
+        fontSize: 14
     },
 });
 
@@ -57,8 +58,8 @@ class ExperienceCardAchievement extends React.PureComponent<IExperienceCardAchie
 
         return (
             <FlexContainer justification="space-between">
-                <Typography variant="body2" className={classes.achievementTitle}>{title}</Typography>
-                {!!date && <Typography variant="body2" className={classes.achievementTitle}>{date}</Typography>}
+                <Typography variant="subtitle1" className={classes.achievementTitle}>{title}</Typography>
+                {!!date && <Typography variant="subtitle1" className={classes.achievementTitle}>{date}</Typography>}
             </FlexContainer>
         );
     }

@@ -10,7 +10,7 @@ const ExperienceCardSummary: React.FunctionComponent<IResumeCardExperienceSummar
     const { summary } = props;
 
     return (
-        <Link href={summary.url} underline="none" variant="subtitle1" target="_blank">
+        <Link href={summary.url} underline={summary.url ? "hover" : "none"} variant="subtitle1" target="_blank">
             {summary.name}
         </Link>
     );
